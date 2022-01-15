@@ -57,7 +57,6 @@ const renderCalender = () => {
     days += `<div class="next-date">${j}</div>`
     monthDays.innerHTML = days;
   }
-
 }
 //前の矢印を押したら前月の月のカレンダーを取得する
 document.querySelector(".prev").addEventListener("click", () => {
