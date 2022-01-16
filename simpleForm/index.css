@@ -61,3 +61,20 @@ body {
   transform: translate(-50%, -50%);
 }
 
+@keyframes shake {
+  0%{
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  25%{
+    transform: translate(-50%,-50%) rotate(10deg);
+  }
+  50%{
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  75%{
+    transform: translate(-50%,-50%) rotate(5deg);
+  }
+  100%{
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+}
