@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inner {
+  width: 235px;
+  height: auto;
+  margin: 100px auto;
+  text-align: center;
+  background: cornflowerblue;
+  padding: 10px;
+  border-radius: 10px;
+  border: #000 solid 0.5px;
+}
+
+.login {
+  color: #fff;
+}
+
+.input {
+  margin: 5px;
+  height: 30px;
+  width: 200px;
+}
+
+.number {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputbutton {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  font-size: 25px;
+}
