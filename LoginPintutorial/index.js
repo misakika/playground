@@ -29,7 +29,7 @@ class PinLogin {
       const insertBreak = key.search(/[369]/) !== -1;
       const keyEl = document.createElement("div");
       keyEl.classList.add("pin-login__key");
-      // iEl.classList.toggle("fas fa-backspace", isNaN(key));
+      iEl.classList.toggle("fas fa-backspace", isNaN(key));
       keyEl.textContent = key;
       keyEl.addEventListener("click", () => {
         this._handleKeyPress(key)
@@ -57,6 +57,7 @@ class PinLogin {
   }
   _updateValueText(){
     this.el.textDisplay.value = "_".repeat(this.value.length);
+    this.el.textDisplay.classList.remove("pin-login__text--error")
   }
 
   _attemptLogin() {
@@ -70,6 +71,8 @@ class PinLogin {
       }).then(response => {
         if(response.status === 200){
           window.location.href = this.redirectTo;
+        }else{
+          this.el.textDisplay.classList.add("pin-login__text--error")
         }
       })
     }
