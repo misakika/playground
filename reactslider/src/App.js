@@ -5,7 +5,7 @@ import images from "./images";
 
 function App() {
   const [width, setWidth] = useState(0);
-  const carousel = useRef();
+  const carousel = useRef(null);
 
   useEffect(() => {
     console.log(carousel.current.scrollWidth , carousel.current.offsetWidth)
